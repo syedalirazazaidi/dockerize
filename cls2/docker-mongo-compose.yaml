@@ -1,4 +1,5 @@
 # docker run -p 27017:27017 -d -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongo_db --network mongo-network mongo    
+# docker run -d --network mongo-network -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password --name mongo-container -e ME_CONFIG_MONGODB_SERVER=mongo -p 8080:8081 mongo-express
 
 version: '3.8'
 
@@ -14,6 +15,19 @@ services:
     networks:
       - mongo-network
 
+  mongo_express:
+    image: mongo-express
+    container_name: mongo_express
+    ports:
+      - "8080:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: password
+      ME_CONFIG_MONGODB_SERVER: mongo_db
+    networks:
+      - mongo-network
+
 networks:
   mongo-network:
     driver: bridge
+
