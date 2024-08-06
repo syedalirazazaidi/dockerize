@@ -1,0 +1,19 @@
+# docker run -p 27017:27017 -d -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongo_db --network mongo-network mongo    
+
+version: '3.8'
+
+services:
+  mongo_db:
+    image: mongo
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+    networks:
+      - mongo-network
+
+networks:
+  mongo-network:
+    driver: bridge
