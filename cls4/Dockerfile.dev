@@ -1,15 +1,23 @@
+# Use an official Node.js image as the base image
 FROM node:18
 
-LABEL maintainer="aliraza"
+# Set the maintainer label
+LABEL maintainer="raza"
 
-WORKDIR /app
+# Set the working directory inside the container
+WORKDIR /code
 
-COPY package*.json ./
+# Copy package.json and package-lock.json to the working directory
+COPY package.json ./
 
+# Install dependencies (only production dependencies)
 RUN npm install --production
 
-COPY . .
+# Copy the rest of the application code to the container
+COPY ./backend /code/
 
-EXPOSE 3000
+# Expose the port that your application will run on
+EXPOSE 3001
 
-CMD ["node", "app.js"]
+# Define the command to run your application
+CMD ["node", "backend/app.js"]
