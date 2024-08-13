@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 FROM node:18
 
 # Set the maintainer label
-LABEL maintainer="raza"
+LABEL maintainer=""
 
 # Set the working directory inside the container
 WORKDIR /code
