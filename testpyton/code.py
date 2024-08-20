@@ -308,18 +308,180 @@
 #   print(alien)
 
 
-# Make an empty list for storing aliens.
-aliens = []
+# # Make an empty list for storing aliens.
+# aliens = []
 
-# Make 30 green aliens.
-for alien_number in range(30):
-    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
-    aliens.append(new_alien)
+# # Make 30 green aliens.
+# for alien_number in range(30):
+#     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
 
-# Show the first 5 aliens.
-for alien in aliens[:5]:
-    print(alien)
-print("...")
+# # Show the first 5 aliens.
+# for alien in aliens[:5]:
+#     print(alien)
+# print("...")
 
-# Show how many aliens have been created.
-print(f"Total number of aliens: {len(aliens)}")
+# # Show how many aliens have been created.
+# print(f"Total number of aliens: {len(aliens)}")
+
+# # Make an empty list for storing aliens.
+# aliens = []
+
+# # Make 30 green aliens.
+# for alien_number in range(30):
+#     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
+
+# for alien in aliens[:3]:
+#     if alien['color'] == 'green':
+#         alien['color'] = 'yellow'
+#         alien['speed'] = 'medium'
+#         alien['points'] = 10
+
+# # Show the first 5 aliens.
+# for alien in aliens[:5]:
+#     print(alien)
+# print("...")
+
+# # Show how many aliens have been created.
+# print(f"Total number of aliens: {len(aliens)}")
+
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'rust',
+#     'phil': 'python',
+#     }
+
+# language = favorite_languages['sarah'].title()
+# print(f"Sarah's favorite language is {language}.")
+
+
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'rust',
+#     'phil': 'python',
+#     }
+
+# for name, language in favorite_languages.items():
+#     print(f"{name.title()}'s favorite language is {language.title()}.")
+
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'rust',
+#     'phil': 'python',
+#     }
+
+# for name in favorite_languages.keys():
+#     print(name.title())
+
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'rust',
+#     'phil': 'python',
+#     }
+
+# friends = ['phil', 'sarah']
+# for name in favorite_languages:
+#     print(f"Hi {name.title()}.")
+    
+#     if name in friends:
+#         language = favorite_languages[name].title()
+#         print(f"\t{name.title()}, I see you love {language}!")
+
+
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'rust',
+#     'phil': 'erin',
+#     }
+
+# if 'erin' not in favorite_languages.values():
+#     print("Erin, please take our poll!")
+
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'rust',
+#     'phil': 'python',
+#     }
+
+# for name in sorted(favorite_languages.keys()):
+#     print(f"{name.title()}, thank you for taking the poll.")
+
+# favorite_languages = {
+#       'jen': ['python', 'rust'],
+#       'sarah': ['c'],
+#       'edward': ['rust', 'go'],
+#       'phil': ['python', 'haskell'],
+#       }
+
+# for name, languages in favorite_languages.items():
+#     print(f"\n{name.title()}'s favorite languages are:")
+#     for language in languages:
+#         print(f"\t{language.title()}")
+
+# users = {
+#     'aeinstein': {
+#         'first': 'albert',
+#         'last': 'einstein',
+#         'location': 'princeton',
+#         },
+
+#     'mcurie': {
+#         'first': 'marie',
+#         'last': 'curie',
+#         'location': 'paris',
+#         },
+
+#     }
+
+# for username, user_info in users.items():
+#     print(f"\nUsername: {username}")
+#     full_name = f"{user_info['first']} {user_info['last']}"
+#     location = user_info['location']
+    
+#     print(f"\tFull name: {full_name.title()}")
+#     print(f"\tLocation: {location.title()}")
+
+# alien_0 = {'color': 'green', 'points': 5}
+# print(alien_0)
+
+# del alien_0['points']
+# print(alien_0)
+
+# alien_0 = {'color': 'green', 'speed': 'slow'}
+# print(alien_0['points'])
+
+# alien_0 = {'color': 'green', 'speed': 'slow'}
+
+# point_value = alien_0.get('color', 'No point value assigned.')
+# print(point_value)
+
+
+# alien_0 = {'color': 'green', 'points': 5}
+# alien_1 = {'color': 'yellow', 'points': 10}
+# alien_2 = {'color': 'red', 'points': 15}
+
+# aliens = [alien_0, alien_1, alien_2]
+
+
+# for alien in aliens:
+#   print(alien)
+
+
+# message:str="32"
+# print(message)
+
+# mystr:str=100
+# print(mystr)
+
+
+# message:int="hi ali"
+# print(message)
+
+print("hello world")
